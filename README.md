@@ -236,25 +236,24 @@ Docker · Linux · Git · GitHub Actions
 
   <img
     height="165"
-    src="https://github-readme-stats.vercel.app/api?username=arthurpalhares1&show_icons=true&hide_border=true&bg_color=0D1117&title_color=A8C3A0&text_color=7E9AB0&icon_color=3E7C59"
+    src="https://raw.githubusercontent.com/arthurpalhares1/arthurpalhares1/main/dist/stats.svg"
     alt="GitHub stats"
   />
+
   <img
     height="165"
-    src="https://github-readme-stats.vercel.app/api/top-langs/?username=arthurpalhares1&layout=compact&hide_border=true&bg_color=0D1117&title_color=A8C3A0&text_color=7E9AB0"
+    src="https://raw.githubusercontent.com/arthurpalhares1/arthurpalhares1/main/dist/top-langs.svg"
     alt="Top languages"
   />
 
   <br><br>
 
   <img
-    src="https://github-readme-streak-stats.herokuapp.com/?user=arthurpalhares1&hide_border=true&background=0D1117&stroke=3E7C59&ring=A8C3A0&fire=7E9AB0&currStreakLabel=A8C3A0&sideLabels=7E9AB0&dates=7E9AB0"
-    alt="Streak"
-  />
+  src="https://github-readme-streak-stats.herokuapp.com/?user=arthurpalhares1&hide_border=true&background=0D1117&stroke=FFFFFF&ring=A8C3A0&fire=7E9AB0&currStreakNum=FFFFFF&sideNums=FFFFFF&currStreakLabel=FFFFFF&sideLabels=FFFFFF&dates=FFFFFF"
+  alt="Streak"
+/>
 
 </div>
-
-<br>
 
 <!-- ─────────────────────────  FOCUS  ───────────────────────── -->
 
