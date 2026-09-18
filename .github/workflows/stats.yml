@@ -2,10 +2,9 @@ name: Update README cards
 
 on:
   schedule:
-    # Toda segunda-feira às 00:00 no horário de Brasília (03:00 UTC)
+    # Toda segunda-feira às 00:00 no horário de Brasília
     - cron: "0 3 * * 1"
 
-  # Permite rodar manualmente pela aba Actions
   workflow_dispatch:
 
 jobs:
