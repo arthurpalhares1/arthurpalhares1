@@ -5,7 +5,7 @@
   ║           denim #7E9AB0 (inspired by the profile photo)      ║
   ║  Assets expected:                                            ║
   ║    assets/icone-none-default.svg  → GovHub logo              ║
-  ║    assets/icone-unb-default.svg   → UnB logo                 ║
+  ║    assets/icone-unb-default.png   → UnB logo                 ║
   ║  TODO: replace the Gmail / LinkedIn placeholders below       ║
   ╚══════════════════════════════════════════════════════════════╝
 -->
@@ -36,7 +36,7 @@
   &nbsp;&nbsp;|&nbsp;&nbsp;
   Software Engineering student @ <strong>UnB</strong>
   <a href="https://www.unb.br/" target="_blank" rel="noreferrer">
-    <img src="assets/icone-unb-default.svg" alt="UnB" height="20" />
+    <img src="assets/icone-unb-default.png" alt="UnB" height="20" />
   </a>
   <br><br>
 </h4>
