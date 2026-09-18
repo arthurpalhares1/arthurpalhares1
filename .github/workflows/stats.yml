@@ -1,0 +1,47 @@
+name: Update README cards
+
+on:
+  schedule:
+    # Toda segunda-feira às 00:00 no horário de Brasília (03:00 UTC)
+    - cron: "0 3 * * 1"
+
+  # Permite rodar manualmente pela aba Actions
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Generate GitHub stats
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: stats
+          options: username=arthurpalhares1&show_icons=true&hide_border=true&bg_color=0D1117&title_color=A8C3A0&text_color=7E9AB0&icon_color=3E7C59
+          path: dist/stats.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate top languages
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: top-langs
+          options: username=arthurpalhares1&layout=compact&hide_border=true&bg_color=0D1117&title_color=A8C3A0&text_color=7E9AB0
+          path: dist/top-langs.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit updated cards
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add dist/stats.svg dist/top-langs.svg
+
+          git diff --cached --quiet || git commit -m "chore: update GitHub stats"
+
+          git push
